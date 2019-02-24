@@ -9,7 +9,7 @@ const combinations = require("./domain/combinations");
  * @param {Object<String, Region>} world
  * @return {Number}
  */
-const getReinforcementCount
+const getReinforcementCount =
   (army, cards, world) => {
 
   };
@@ -22,7 +22,7 @@ module.exports = getReinforcementCount;
  * @property {cannon|soldier|cavalier} type
  */
 
- /**
+/**
  * @typedef Region
  * @property {String} army
  */
