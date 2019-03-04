@@ -207,7 +207,7 @@ describe("possible combinations", () => {
     expect(
       getReinforcement("Blue", [
         card("japan", "cannon"),
-        card("peru", "soldier"),
+        card("island", "soldier"),
         card("siam", "cavalier"),
       ], smallWorld)
     ).toBe(14);
@@ -223,7 +223,7 @@ describe("possible combinations", () => {
     ).toBe(12);
   });
 
-  it("returns 14 when there're two jolly + 2 for the controlled region", () => {
+  it("returns 14 when there're two cards equals and a jolly + 2 for the controlled region", () => {
     expect(
       getReinforcement("Blue", [
         card("egypt", "cavalier"),
@@ -233,14 +233,13 @@ describe("possible combinations", () => {
     ).toBe(14);
   });
 
-  it("throws when there're two jolly", () => {
+  it("returns 0 when there're two jolly", () => {
     expect(
       getReinforcement("Blue", [
         card("peru", "cavalier"),
         card(null, "jolly"),
         card(null, "jolly"),
       ], smallWorld)
-    ).toThrow("Invalid reinforcement request: must not change two jolly.");
+    ).toBe(0);
   });
-
 });
