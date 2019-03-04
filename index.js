@@ -11,7 +11,7 @@ const combinations = require("./domain/combinations");
  */
 const getReinforcementCount =
   (army, cards, world) => {
-
+      
   };
 
 module.exports = getReinforcementCount;

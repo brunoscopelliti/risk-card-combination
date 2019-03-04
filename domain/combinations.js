@@ -5,7 +5,7 @@ const combinations = new Map([
   ["soldier", 6],
   ["cavalier", 8],
   ["three-different", 10],
-  ["two-jolly", 12],
+  ["two-equal-one-jolly", 12],
 ]);
 
 module.exports = combinations;
