@@ -23,7 +23,7 @@ const getReinforcementCount =
       throw new Error("Invalid reinforcement request: must pass the current world map.");
     }
 
-    var result = 0;
+    let result = 0;
 
     if (cards.every(isCannon)) {
       result = combinations.get("cannon");
